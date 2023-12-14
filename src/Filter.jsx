@@ -33,23 +33,3 @@ function Filter({ filter, options }) {
 }
 
 export default Filter;
-
-// const [searchFilter, setSearchFilter] = useState([]);
-
-// useEffect(() => {
-//   const params = searchParams.getAll(filter);
-//   setSearchFilter(params);
-// }, [filter, searchParams]);
-
-// function handleClick(value) {
-//   let updatedFilter = [...searchFilter];
-
-//   if (!updatedFilter.includes(value)) {
-//     updatedFilter.push(value);
-//   } else if (updatedFilter.includes(value)) {
-//     updatedFilter = updatedFilter.filter((item) => item !== value);
-//   }
-//   searchParams.set(filter, updatedFilter);
-//   setSearchParams(searchParams);
-//   setSearchFilter(updatedFilter);
-// }

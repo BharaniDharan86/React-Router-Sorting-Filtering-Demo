@@ -12,7 +12,6 @@ function Product() {
     queryKey: ["products"],
     queryFn: createProduct,
   });
-  console.log(isLoading, products);
 
   if (isLoading) return <p>Please Wait ...🫸</p>;
 
@@ -49,15 +48,12 @@ function Product() {
 
   let sortByProduct;
 
-  console.log(field, directions);
   sortByProduct =
     field === "price"
       ? filteredProduct.sort((a, b) => (a[field] - b[field]) * modifier)
       : filteredProduct.sort(
           (a, b) => (a[field].rate - b[field].rate) * modifier
         );
-
-  console.log(sortByProduct);
 
   return (
     <div>

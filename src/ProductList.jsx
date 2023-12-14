@@ -3,8 +3,8 @@ const productStyle = {
   border: "1px solid #ccc",
   padding: "10px",
   marginBottom: "20px",
-  width: "100%", // Set width to 100%
-  boxSizing: "border-box", // Include padding and border in the width calculation
+  width: "100%",
+  boxSizing: "border-box",
   textAlign: "center",
 };
 
