@@ -70,7 +70,15 @@ function Product() {
           { value: "electronics", label: "Electronics" },
         ]}
       />
-      <SortBy />
+      <SortBy
+        filter="sortBy"
+        options={[
+          { value: "price-asc", label: "Sort By Price (Low To High)" },
+          { value: "price-desc", label: "Sort By Price (High To Low)" },
+          { value: "rating-asc", label: "Sort By Rating (Low To High)" },
+          { value: "rating-desc", label: "Sort By Rating (High To Low)" },
+        ]}
+      />
       <ProductList products={sortByProduct} />
     </div>
   );
